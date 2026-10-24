@@ -1,0 +1,8 @@
+# Optional common research and PDF dependencies. Python 3.11+.
+requests>=2.31,<3
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+Pillow>=10,<13
+reportlab>=4,<5
+pdfplumber>=0.11,<1
+pypdf>=5,<7
