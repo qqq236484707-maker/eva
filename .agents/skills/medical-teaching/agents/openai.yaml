@@ -1,0 +1,4 @@
+interface:
+  display_name: "医学教学课件"
+  short_description: "中文医学教学资料整理、循证核验、逐页课件与讲义制作和检查流程"
+  default_prompt: "使用 $medical-teaching 整理来源并制作详细的中文医学教学课件。"
