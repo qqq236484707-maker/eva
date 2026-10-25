@@ -22,3 +22,7 @@
 - 保留该目录 LICENSE.txt（Apache-2.0）。
 
 集成说明位于 AGENTS.md 和 README.md；未将上游服务或 API 凭据包含在仓库中。
+
+## 2026-10-25 新增视觉技能
+
+源仓库与固定提交同首节。完整复制 canvas-design、algorithmic-art、brand-guidelines 到 .agents/skills/ 同名目录，保留 LICENSE.txt、模板、字体与字体许可；上游文件未修改。额外项目调用限制见 AGENTS.md。现有 UPSTREAM_THIRD_PARTY_NOTICES.md 与本次源提交一致。未复制专有 pptx/docx。
