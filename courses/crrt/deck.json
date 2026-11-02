@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "course_id": "crrt",
+  "title": "CRRT",
+  "status": "draft",
+  "theme": {
+    "font": "Noto Sans CJK SC"
+  },
+  "sources": {},
+  "assets": {},
+  "slides": [
+    {
+      "id": "01",
+      "kind": "cover",
+      "title": "CRRT",
+      "subtitle": "EICU实习生教学｜仅工作流验证稿，尚未经医学审校"
+    },
+    {
+      "id": "02",
+      "kind": "section",
+      "title": "课程结构",
+      "subtitle": "以下内容只演示生成能力，不构成完整授课材料"
+    },
+    {
+      "id": "03",
+      "kind": "bullets",
+      "title": "教学目标（待审核）",
+      "bullets": [
+        "理解本专题的核心概念和知识结构",
+        "能够检索、核对适用的原始指南及推荐条件",
+        "识别操作风险、质量控制与应急处理关注点"
+      ]
+    },
+    {
+      "id": "04",
+      "kind": "two_column",
+      "title": "内容规划（待审核）",
+      "left_heading": "课程章节",
+      "bullets": [
+        "CRRT适应证与处方原则",
+        "血管通路与治疗模式",
+        "滤器、液体与抗凝管理",
+        "治疗监测及并发症预警"
+      ],
+      "right_heading": "待完成的循证审查",
+      "right_bullets": [
+        "逐页核对指南版本、适用人群及原文页码",
+        "补齐准确的图示、参数、单位与关键文献",
+        "授课医师审阅图示及教学重点"
+      ]
+    },
+    {
+      "id": "05",
+      "kind": "bullets",
+      "title": "正式授课前验收",
+      "bullets": [
+        "补齐经过核验的来源编号与适用条件",
+        "逐页审核医学事实、插图、版权和动画",
+        "结构检查后导出PDF、逐页检查中文与版式",
+        "完成PowerPoint端放映测试并登记审校人"
+      ]
+    }
+  ]
+}
