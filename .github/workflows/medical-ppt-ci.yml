@@ -1,0 +1,28 @@
+name: Medical PPTX QA
+on:
+  push:
+    paths: ['tools/**', 'tests/**', 'courses/**', '.github/workflows/medical-ppt-ci.yml']
+  pull_request:
+    paths: ['tools/**', 'tests/**', 'courses/**', '.github/workflows/medical-ppt-ci.yml']
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r tools/requirements-teaching.txt
+      - run: python -m unittest discover -s tests -v
+      - run: |
+          for c in aki cvc crrt; do
+            python tools/medical_ppt.py build --course courses/$c/deck.json --output output/$c/$c.pptx
+            python tools/medical_ppt.py check --pptx output/$c/$c.pptx --course courses/$c/deck.json --report output/$c/structure-report.json
+          done
+      - run: sudo apt-get update -qq && sudo apt-get install -y libreoffice-impress poppler-utils fonts-noto-cjk
+      - run: python tools/medical_ppt.py render --pptx output/aki/aki.pptx --out-dir output/aki/render
+      - uses: actions/upload-artifact@v4
+        with:
+          name: medical-ppt-validation
+          path: output/
+          retention-days: 7
